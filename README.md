@@ -16,7 +16,9 @@ This is a static HTML/CSS/JavaScript site. No build step, analytics, external fo
 
 ## QA
 
-The synthetic six-session A4 and US Letter samples each printed as one PDF page in Aside/Chromium on 2026-10-24. The A4 PDF was rendered and inspected for clipping. Printing an empty form with Ctrl+P produced an instruction page instead of a placeholder sign. Other browsers and physical printers have not been verified. Test one sheet with your printer before a full run.
+The synthetic six-session A4 and US Letter samples each printed as one PDF page in Aside/Chromium on 2026-10-24. Both PDFs were rendered and inspected for clipping. Printing an empty form with Ctrl+P produced an instruction page instead of a placeholder sign. Other browsers and physical printers have not been verified. Test one sheet with your printer before a full run.
+
+The published `sample-room-sign-a4.pdf` and `sample-room-sign-us-letter.pdf` are those browser-generated one-page QA PDFs. Their content is fictional. The app's validation logic changed after these PDFs were generated; their rendering is representative of the current print layout, not a fresh PDF export from the final build.
 
 ## License
 
