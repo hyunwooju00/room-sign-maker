@@ -12,6 +12,8 @@ Open `index.html` in a current desktop Chromium browser or visit the GitHub Page
 
 This is a static HTML/CSS/JavaScript site. No build step, analytics, external fonts, or schedule-upload endpoint. GitHub Pages can publish from the root of the default branch. `.nojekyll` keeps the static files unchanged.
 
+`googleb80246301bd759a0.html` is the Google Search Console ownership file for this URL-prefix property. Keep it at the published site root to retain verification. `robots.txt` points crawlers to the one-page sitemap. Search Console measures Google search impressions and clicks; it does not measure all site visits or purchases.
+
 ## QA
 
 The synthetic six-session A4 and US Letter samples each printed as one PDF page in Aside/Chromium on 2026-10-24. The A4 PDF was rendered and inspected for clipping. Printing an empty form with Ctrl+P produced an instruction page instead of a placeholder sign. Other browsers and physical printers have not been verified. Test one sheet with your printer before a full run.

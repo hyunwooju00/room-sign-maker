@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hyunwooju00.github.io/room-sign-maker/sitemap.xml
