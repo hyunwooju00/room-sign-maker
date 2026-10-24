@@ -12,7 +12,7 @@ Open `index.html` in a current desktop Chromium browser or visit the GitHub Page
 
 This is a static HTML/CSS/JavaScript site. No build step, analytics, external fonts, or schedule-upload endpoint. GitHub Pages can publish from the root of the default branch. `.nojekyll` keeps the static files unchanged.
 
-`googleb80246301bd759a0.html` is the Google Search Console ownership file for this URL-prefix property. Keep it at the published site root to retain verification. `robots.txt` points crawlers to the one-page sitemap. Search Console measures Google search impressions and clicks; it does not measure all site visits or purchases.
+`googleb80246301bd759a0.html` is the Google Search Console ownership file for this URL-prefix property. Keep it at the published site root to retain verification. The one-page `sitemap.xml` can be submitted in Search Console. Search Console measures Google search impressions and clicks; it does not measure all site visits or purchases.
 
 ## QA
 
