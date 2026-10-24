@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Make a printable conference room schedule sign for free. Enter one room's sessions, preview an A4 or US Letter page, and save it as a PDF. No signup or upload.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#183126">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'; frame-src 'none'">
+  <link rel="canonical" href="https://hyunwooju00.github.io/room-sign-maker/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Conference Room Schedule Sign Maker">
+  <meta property="og:description" content="Create a clear one-page room schedule sign. Enter sessions, preview A4 or US Letter, and print or save PDF. Free, no signup, no upload.">
+  <meta property="og:url" content="https://hyunwooju00.github.io/room-sign-maker/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Free Conference Room Schedule Sign Maker | Schedule Press</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css" media="print">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#tool">Skip to the sign maker</a>
+  <header class="site-header">
+    <div class="header-inner"><a class="brand" href="./" aria-label="Schedule Press home"><span class="brand-mark" aria-hidden="true">▤</span> Schedule Press</a><a class="header-link" href="https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs">Sessionize event with many rooms? <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="page-title">
+      <p class="eyebrow">FREE PRINT TOOL · ONE ROOM, ONE DAY</p>
+      <h1 id="page-title">Conference room schedule signs, <em>ready for the door.</em></h1>
+      <p class="hero-copy">Enter a room’s sessions, check the live page, then print or save as PDF. Your entries stay in this browser tab. No account or upload.</p>
+      <a class="text-link" href="#tool">Make a sign <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section id="tool" class="tool wrap" aria-label="Room sign maker">
+      <div class="tool-head"><div><p class="eyebrow">PRINT STUDIO</p><h2>Build your sign</h2></div><span class="privacy">● Local in your browser</span></div>
+      <div id="error" class="message" role="alert" aria-live="assertive"></div>
+      <div id="message" class="message success" role="status" aria-live="polite"></div>
+      <div class="workspace">
+        <div class="editor">
+          <div class="editor-group">
+            <h3>Event details</h3>
+            <div class="fields">
+              <label class="full">Event name<input id="event" type="text" maxlength="80" autocomplete="off" placeholder="Harbor Tech Forum"></label>
+              <label>Room name<input id="room" type="text" maxlength="70" autocomplete="off" placeholder="Harbor Hall"></label>
+              <label>Date<input id="date" type="date"></label>
+            </div>
+          </div>
+          <div class="editor-group sessions-group">
+            <div class="group-heading"><div><h3>Sessions</h3><p>Times print in the format you choose below. Check them against your venue schedule.</p></div><span id="session-count" class="count">0 / 6</span></div>
+            <div id="session-list" class="session-list"></div>
+            <button id="add-session" class="button secondary add" type="button">+ Add a session</button>
+          </div>
+          <div class="editor-group options-group">
+            <h3>Page setup</h3>
+            <div class="fields">
+              <label>Paper<select id="paper"><option value="a4">A4 portrait</option><option value="letter">US Letter portrait</option></select></label>
+              <label>Time display<select id="time-style"><option value="24">24-hour · 09:00</option><option value="12">12-hour · 9:00 AM</option></select></label>
+              <label>Accent color<input id="accent" type="color" value="#a94432"></label>
+            </div>
+          </div>
+          <div class="editor-actions"><button id="print" class="button primary" type="button">Print or save PDF <span aria-hidden="true">↗</span></button><button id="sample" class="button secondary" type="button">Try sample</button><button id="clear" class="button quiet" type="button">Clear form</button></div>
+          <p class="print-tip">In the print dialog, choose Save as PDF or your printer. Set paper to match the selection above, scale to 100%, margins to None, and turn headers and footers off. Print one test sheet first.</p>
+        </div>
+        <div class="preview-panel"><div class="preview-heading"><strong>LIVE PREVIEW</strong><span id="preview-paper">A4 · Portrait</span></div><div class="preview-stage"><article id="sign" class="sign a4" aria-label="Printable room sign"><div class="sign-head"><div id="sign-event" class="sign-event">Your event</div><div id="sign-date" class="sign-date">Choose a date</div></div><h2 id="sign-room" class="sign-room">Your room</h2><p class="sign-subtitle">Today in this room</p><div id="sign-sessions" class="sign-sessions"></div><div class="sign-foot"><span>ROOM SCHEDULE</span><span id="sign-foot-date">—</span></div></article></div><p class="preview-note">This preview is a scale model of one printed page. Check the final print preview before saving.</p></div>
+      </div>
+      <p id="print-warning" class="print-warning" aria-hidden="true"></p>
+    </section>
+
+    <section class="upgrade wrap" aria-labelledby="upgrade-title"><div><p class="eyebrow">WHEN THE EVENT HAS MANY ROOMS</p><h2 id="upgrade-title">One sign is easy. A whole venue takes a tool.</h2><p>This free maker handles one room and day at a time. Schedule Press is a downloadable ZIP with an offline browser app, sample JSON and setup guide. On a desktop Chromium browser, it imports an organizer-created Sessionize Schedule Grid JSON export and builds a coordinated room-by-room, day-by-day print pack. It does not accept a public schedule webpage as input. Review license and refund details on the product page before buying.</p><div class="upgrade-actions"><a class="button light" href="https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs">See Schedule Press · $19 <span aria-hidden="true">↗</span></a><a class="upgrade-guide" href="https://5611130604166.gumroad.com/how-to-print-room-door-schedules-from-sessionize">Read the free Sessionize export guide</a></div></div><div class="upgrade-number" aria-hidden="true">01 → all</div></section>
+
+    <section class="info wrap" aria-labelledby="info-title"><h2 id="info-title">How to print a conference room schedule sign</h2><div class="info-grid"><div><span class="info-step">01</span><h3>Enter one room’s schedule</h3><p>Add the event name, room, date, and up to six session rows. Include end times and speakers when useful.</p></div><div><span class="info-step">02</span><h3>Review the live page</h3><p>Check spelling, room name, date, and time format. The tool uses the times you type; it does not convert time zones.</p></div><div><span class="info-step">03</span><h3>Save or print</h3><p>Use your browser’s print dialog to save a PDF or print a test sheet. Check paper size and the final preview first.</p></div></div><div class="faq"><h3>Common questions</h3><details><summary>Does this upload my schedule?</summary><p>No. The form runs in this browser tab. It makes no schedule upload request and does not save entries to an account. If you close or refresh the tab, entries are lost.</p></details><details><summary>Can I make signs for several rooms?</summary><p>You can reuse this form manually for each room. For a Sessionize event with many rooms or days, <a href="https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs">Schedule Press</a> builds the print pack from the organizer’s Schedule Grid JSON.</p></details><details><summary>Will a public Sessionize timetable link work?</summary><p>No. This free maker uses manual entry. The paid tool requires a Schedule Grid (GridSmart) JSON export from an organizer-created Sessionize endpoint. The <a href="https://5611130604166.gumroad.com/how-to-print-room-door-schedules-from-sessionize">free guide</a> explains the export.</p></details></div></section>
+  </main>
+  <footer class="footer wrap"><span>© Schedule Press · Independent event print tools</span><span>Not affiliated with Sessionize.</span></footer>
+  <dialog id="print-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title">Check your print settings</h2><p>Match your selected paper size, set scale to 100% and margins to None, then turn off browser headers and footers. Review the final preview before printing all copies.</p><div class="dialog-actions"><button id="cancel-print" type="button" class="button secondary">Cancel</button><button id="confirm-print" type="button" class="button primary">Open print dialog</button></div></dialog>
+</body>
+</html>

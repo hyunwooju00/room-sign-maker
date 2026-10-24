@@ -1,0 +1,10 @@
+@page { size: A4 portrait; margin: 0; }
+html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; min-width: 0 !important; }
+body > header, body > footer, body > dialog, main > :not(#tool), #tool > :not(.workspace), .workspace > :not(.preview-panel), .preview-panel > :not(.preview-stage) { display: none !important; }
+main, #tool, .workspace, .preview-panel, .preview-stage { display: block !important; width: auto !important; max-width: none !important; height: auto !important; max-height: none !important; margin: 0 !important; padding: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; overflow: visible !important; position: static !important; }
+.sign { zoom: 1 !important; margin: 0 !important; border: 0 !important; box-shadow: none !important; break-inside: avoid !important; break-after: avoid !important; }
+.sign.a4 { height: 296mm !important; }
+.sign.letter { height: 278.4mm !important; }
+body > footer.footer { display: none !important; }
+.print-invalid .workspace { display: none !important; }
+.print-invalid #tool > #print-warning { display: block !important; margin: 20mm !important; color: #111 !important; font: 18pt Arial, sans-serif !important; }
