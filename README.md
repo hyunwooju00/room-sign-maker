@@ -10,6 +10,8 @@ The site also includes a [Sessionize room-door sign workflow](sessionize-room-si
 
 The [free CSV name badge maker](badge-maker.html) imports up to 250 people and makes four 3 × 4 inch cut-out inserts per A4 or US Letter sheet. It accepts `name` or separate first/last name columns, with optional organization and role. It handles UTF-8 comma, semicolon, or tab-delimited files in the browser. `badge-example.csv` and the browser-generated `badge-sample-A4.pdf` use fictional attendees. The badges are plain-paper inserts, not calibrated for perforated label stock. The [PDF sample](badge-sample-A4.pdf) is one A4 page with four badges.
 
+The [free workshop certificate maker](workshop-certificate-maker.html) creates one attendance or appreciation certificate at a time. It previews A4 or US Letter landscape output, fits ordinary long names where possible, and blocks printing if content does not fit. It does not verify credentials, use a logo or signature, or upload names. The fictional [A4](certificate-sample-A4.pdf) and [US Letter](certificate-sample-letter.pdf) samples each render as one page. This page is a small distribution test for workshop and event searches; a bulk CSV version has not been built or offered for sale.
+
 ## Use
 
 Open `index.html` in a current desktop Chromium browser or visit the GitHub Pages site. Choose **Try sample** to inspect an example. Fill in your own event data, review the print preview, then select **Print or save PDF**. Match A4 or US Letter paper, use 100% scale and no margins, disable browser headers and footers, and inspect the final print preview. This is an independent tool and is not affiliated with Sessionize.

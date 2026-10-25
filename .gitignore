@@ -1,3 +1,7 @@
 QA_*.pdf
 CLAUDE_*.md
 tmp/
+certificate-*-render.png
+certificate-dense-proof.pdf
+certificate-preview.png
+certificate-*-debug-*.png

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Make one printable workshop certificate of attendance or appreciation. A4 or US Letter landscape, live preview, no signup or name upload.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#183126">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'; frame-src 'none'">
+  <link rel="canonical" href="https://hyunwooju00.github.io/room-sign-maker/workshop-certificate-maker.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Workshop Certificate of Attendance Maker">
+  <meta property="og:description" content="Make and print one clean workshop certificate in A4 or US Letter. No account or upload.">
+  <meta property="og:url" content="https://hyunwooju00.github.io/room-sign-maker/workshop-certificate-maker.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="workshop-certificate-maker.css">
+  <script defer src="workshop-certificate-maker.js"></script>
+  <title>Free Workshop Certificate of Attendance Maker | Schedule Press</title>
+</head>
+<body>
+  <a class="skip" href="#maker">Skip to certificate maker</a>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="./">▤ Schedule Press</a><nav aria-label="Site"><a href="./">Room signs</a><a href="badge-maker.html">Name badges</a></nav></div></header>
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">FREE WORKSHOP PRINT TOOL</p>
+      <h1>One person's work deserves<br><em>more than a blank template.</em></h1>
+      <p>Create a clean certificate of attendance or appreciation for one person. Edit the words, review the full page, then print or save a PDF. Your entries stay in this tab.</p>
+      <a href="#maker" class="hero-link">Make a certificate <span aria-hidden="true">↓</span></a>
+      <p class="sample-link">See the actual fictional output: <a href="certificate-sample-A4.pdf">A4 PDF</a> · <a href="certificate-sample-letter.pdf">US Letter PDF</a>.</p>
+    </section>
+
+    <section class="wrap workspace" id="maker" aria-labelledby="maker-title">
+      <div class="panel controls">
+        <div class="section-head"><div><p class="eyebrow">01 / WRITE</p><h2 id="maker-title">Certificate details</h2></div><span class="privacy">● Local only</span></div>
+        <div class="field-grid">
+          <label class="field">Certificate type<select id="kind"><option value="attendance">Attendance</option><option value="appreciation">Appreciation</option></select></label>
+          <label class="field">Paper<select id="paper"><option value="a4">A4 landscape</option><option value="letter">US Letter landscape</option></select></label>
+          <label class="field full">Recipient name <span class="required">required</span><input id="recipient" type="text" required autocomplete="off" placeholder="e.g. Jordan Lee"></label>
+          <label class="field full">Workshop or event <span class="required">required</span><input id="event" type="text" required autocomplete="off" placeholder="e.g. Community Data Workshop"></label>
+          <label class="field full">Presented by <span class="required">required</span><input id="issuer" type="text" required autocomplete="off" placeholder="e.g. Harbor Learning Lab"></label>
+          <label class="field full">Short note <span class="optional">optional</span><input id="note" type="text" autocomplete="off" placeholder="e.g. For completing the hands-on data session"></label>
+          <label class="field">Date<input id="date" type="date"></label>
+          <label class="field">Accent<input id="accent" type="color" value="#8c4c32" aria-label="Accent color"></label>
+        </div>
+        <div class="actions"><button id="sample" class="button secondary" type="button">Try a sample</button><button id="next-recipient" class="button secondary" type="button">Next recipient</button><button id="print" class="button primary" type="button" aria-disabled="true" aria-describedby="status error">Print / save PDF</button></div>
+        <p id="error" class="notice error" role="alert" aria-live="assertive" hidden></p>
+        <p id="status" class="notice success" role="status" aria-live="polite">Fill the three required fields or try the sample.</p>
+        <p class="micro">This makes one certificate at a time. Long text must be shortened if the page cannot fit it. Names are not uploaded or saved. Refreshing the tab clears your work.</p>
+      </div>
+
+      <div class="panel preview-panel">
+        <div class="section-head"><div><p class="eyebrow">02 / PROOF</p><h2>Review the whole page</h2></div><span id="paper-label" class="paper-label">A4 · landscape</span></div>
+        <div id="preview-viewport" class="preview-viewport">
+          <article id="certificate" class="certificate a4" aria-label="Printable certificate preview">
+            <div class="certificate-frame">
+              <div class="certificate-top"><span class="star" aria-hidden="true">✦</span><span id="preview-kind-small">CERTIFICATE OF ATTENDANCE</span><span class="star" aria-hidden="true">✦</span></div>
+              <div class="certificate-rule"></div>
+              <p class="presented">PROUDLY PRESENTED TO</p>
+              <div id="preview-recipient" class="recipient">Recipient name</div>
+              <div class="name-rule"></div>
+              <p id="preview-lead" class="lead">For participating in</p>
+              <div id="preview-event" class="event">Your workshop or event</div>
+              <p id="preview-note" class="certificate-note">A moment worth remembering.</p>
+              <div class="certificate-bottom"><div id="date-block"><span>DATE</span><strong id="preview-date">—</strong></div><div class="seal" aria-hidden="true"><span>✦</span></div><div><span>PRESENTED BY</span><strong id="preview-issuer">Your organization</strong></div></div>
+            </div>
+          </article>
+        </div>
+        <p class="micro">Proof spelling and the final browser print preview. A single test print is recommended before giving this to someone.</p>
+      </div>
+    </section>
+
+    <section class="wrap print-guide"><div><p class="eyebrow">PRINT CHECKLIST</p><h2>Make the saved PDF match the page.</h2></div><ol><li>Choose the same paper size here and in the print dialog: A4 or US Letter, landscape.</li><li>Use 100% scale, margins set to None, and turn browser headers and footers off.</li><li>Enable background graphics if your browser offers that option; inspect the final PDF and print one sheet first.</li></ol><p>This ceremonial certificate does not independently verify attendance or confer accreditation. It does not collect signatures or verify identity.</p></section>
+    <section class="wrap related"><div><p class="eyebrow">MORE FOR YOUR EVENT</p><h2>Print a consistent event set.</h2><p>Make <a href="./">room schedule signs</a> and <a href="badge-maker.html">name badges</a> for free, or prepare attendee pocket agendas from a spreadsheet CSV with our offline tool.</p></div><a class="button secondary" href="https://5611130604166.gumroad.com/l/pocket-agenda-studio?utm_source=github_pages&amp;utm_medium=certificate_tool&amp;utm_campaign=related_tools">See Pocket Agenda Studio · $4.90 ↗</a></section>
+  </main>
+  <footer class="wrap footer"><p>Schedule Press · Independent event print tools. <a href="https://github.com/hyunwooju00/room-sign-maker">Source on GitHub</a>.</p></footer>
+  <section id="print-blocked" class="print-blocked-message" aria-hidden="true"><h2>Certificate not ready</h2><p>Return to the editor, complete the required fields, and shorten any text that does not fit before printing.</p></section>
+  <style id="page-rule"></style>
+</body>
+</html>
