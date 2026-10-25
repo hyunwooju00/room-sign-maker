@@ -31,9 +31,9 @@
         [card.querySelector('.badge-org'), 8],
         [card.querySelector('.badge-role'), 7]
       ];
-      if (fields.some(([element, floor, container]) => !fitText(element, floor, container))) failures.push(index + 2);
+      if (fields.some(([element, floor, container]) => !fitText(element, floor, container))) failures.push(index + 1);
     });
-    if (failures.length) throw new Error(`Text does not fit on badge row${failures.length === 1 ? '' : 's'} ${failures.slice(0, 8).join(', ')}${failures.length > 8 ? '…' : ''}. Shorten those entries.`);
+    if (failures.length) throw new Error(`Text does not fit on badge${failures.length === 1 ? '' : 's'} ${failures.slice(0, 8).join(', ')}${failures.length > 8 ? '…' : ''}. Shorten those entries.`);
   }
   function badge(person, eventName) {
     const card = document.createElement('article'); card.className = 'badge';
@@ -78,7 +78,7 @@
       $('page-rule').textContent = `@page { size: ${paper.value === 'letter' ? 'letter' : 'A4'} portrait; margin: 0; }`;
       ready = true; printButton.disabled = false;
       csv.removeAttribute('aria-invalid'); document.body.classList.remove('print-invalid');
-      notice(status, `Ready: ${people.length} badge${people.length === 1 ? '' : 's'} on ${pages.length} sheet${pages.length === 1 ? '' : 's'}. Review the first sheet and print one test sheet.`);
+      notice(status, `Ready: ${people.length} badge${people.length === 1 ? '' : 's'} on ${pages.length} sheet${pages.length === 1 ? '' : 's'}. Review every sheet and print one test sheet.`);
       return true;
     } catch (err) {
       ready = false; printButton.disabled = true;

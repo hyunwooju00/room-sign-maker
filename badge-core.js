@@ -59,11 +59,11 @@
       const cells = rows[i];
       const name = columns.name >= 0 ? (cells[columns.name] || '').trim() :
         [columns.first, columns.last].filter(index => index >= 0).map(index => (cells[index] || '').trim()).filter(Boolean).join(' ');
-      if (!name) throw new Error(`Row ${i + 2} has no name. Add one or remove that row.`);
+      if (!name) throw new Error(`Record ${i + 1} has no name. Add one or remove that record.`);
       const organization = columns.org < 0 ? '' : (cells[columns.org] || '').trim();
       const role = columns.role < 0 ? '' : (cells[columns.role] || '').trim();
       if (name.length > 70 || organization.length > 70 || role.length > 30)
-        throw new Error(`Row ${i + 2} is too long for a badge (name 70, organization 70, role 30 characters maximum).`);
+        throw new Error(`Record ${i + 1} is too long for a badge (name 70, organization 70, role 30 characters maximum).`);
       people.push({ name, organization, role });
       if (people.length > 250) throw new Error('This tool handles up to 250 badges at a time. Split a larger file into batches.');
     }

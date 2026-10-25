@@ -8,6 +8,8 @@ The full [Schedule Press](https://5611130604166.gumroad.com/l/schedule-press-ses
 
 The site also includes a [Sessionize room-door sign workflow](sessionize-room-signs.html): endpoint setup, data checks, proofing and a printer checklist. It cites Sessionize's official API guidance and links back to the free maker. Product links from the free site use Gumroad UTM parameters so future clicks and purchases can be attributed to this site; no site analytics script is installed.
 
+The [free CSV name badge maker](badge-maker.html) imports up to 250 people and makes four 3 × 4 inch cut-out inserts per A4 or US Letter sheet. It accepts `name` or separate first/last name columns, with optional organization and role. It handles UTF-8 comma, semicolon, or tab-delimited files in the browser. `badge-example.csv` and the browser-generated `badge-sample-A4.pdf` use fictional attendees. The badges are plain-paper inserts, not calibrated for perforated label stock. The [PDF sample](badge-sample-A4.pdf) is one A4 page with four badges.
+
 ## Use
 
 Open `index.html` in a current desktop Chromium browser or visit the GitHub Pages site. Choose **Try sample** to inspect an example. Fill in your own event data, review the print preview, then select **Print or save PDF**. Match A4 or US Letter paper, use 100% scale and no margins, disable browser headers and footers, and inspect the final print preview. This is an independent tool and is not affiliated with Sessionize.
@@ -23,6 +25,8 @@ This is a static HTML/CSS/JavaScript site. No build step, analytics, external fo
 The synthetic six-session A4 and US Letter samples each printed as one PDF page in Aside/Chromium on 2026-10-24. Both PDFs were rendered and inspected for clipping. Printing an empty form with Ctrl+P produced an instruction page instead of a placeholder sign. Other browsers and physical printers have not been verified. Test one sheet with your printer before a full run.
 
 The published `sample-room-sign-a4.pdf` and `sample-room-sign-us-letter.pdf` are those browser-generated one-page QA PDFs. Their content is fictional. The app's validation logic changed after these PDFs were generated; their rendering is representative of the current print layout, not a fresh PDF export from the final build.
+
+The badge maker's four-name A4 sample printed as one PDF page and an eight-name US Letter sample printed as two PDF pages in Aside/Chromium on 2026-10-25. Both page sizes and rendered output were inspected. Physical trimming and badge-holder fit remain for a real printer test.
 
 ## License
 

@@ -23,3 +23,5 @@
   body.print-invalid #print-pages{display:none!important}
   body.print-invalid::before{content:'Badge data is not ready. Return to the page, fix the CSV, and build badges again.';display:block;margin:20mm;font:16pt Arial,sans-serif;color:#842b22}
 }
+
+.hero .sample-link{font-size:.9rem!important;margin-top:-8px;color:#536158}
