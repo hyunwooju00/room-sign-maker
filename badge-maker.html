@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Turn a CSV into printable 3 × 4 inch conference name badges. Four badges per A4 or US Letter sheet, with cut guides. Free and private in your browser.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#183126">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'; frame-src 'none'">
+  <link rel="canonical" href="https://hyunwooju00.github.io/room-sign-maker/badge-maker.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free CSV Conference Name Badge Maker">
+  <meta property="og:description" content="Import a guest list and print 3 × 4 inch name badge inserts. A4 and US Letter, four per page, no upload.">
+  <meta property="og:url" content="https://hyunwooju00.github.io/room-sign-maker/badge-maker.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="badge-maker.css">
+  <script defer src="badge-core.js"></script>
+  <script defer src="badge-maker.js"></script>
+  <title>Free CSV Conference Name Badge Maker | Schedule Press</title>
+</head>
+<body class="paper-a4">
+  <a class="skip" href="#maker">Skip to badge maker</a>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="./">▤ Schedule Press</a><a href="./">Room sign maker <span aria-hidden="true">↗</span></a></div></header>
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">FREE PRINT TOOL · NO ACCOUNT</p>
+      <h1>Guest list in.<br><em>Name badges out.</em></h1>
+      <p>Make 3 × 4 inch portrait badge inserts from a CSV. Four per A4 or US Letter sheet, ready to cut. Names stay in your browser and are never uploaded.</p>
+      <a class="hero-link" href="#maker">Make badges ↓</a>
+    </section>
+    <section class="wrap workspace" id="maker" aria-labelledby="maker-title">
+      <div class="panel controls">
+        <div class="section-head"><div><p class="eyebrow">01 / BUILD</p><h2 id="maker-title">Your badge sheet</h2></div><span class="privacy">● Local only</span></div>
+        <p class="help">Your CSV needs a <code>name</code> column, or <code>first name</code> and <code>last name</code>. <code>organization</code> and <code>role</code> are optional. One person per row, up to 250. <a href="badge-example.csv" download>Download example CSV</a>.</p>
+        <label class="field">Event name <span class="optional">optional</span><input id="event-name" type="text" maxlength="35" value="Harbor Tech Forum" autocomplete="off" placeholder="Your event name"></label>
+        <label class="field">Choose CSV or TSV file<input id="csv-file" type="file" accept=".csv,.tsv,text/csv,text/tab-separated-values"></label>
+        <label class="field">Or paste CSV / TSV<textarea id="csv-input" spellcheck="false" rows="10" autocomplete="off" aria-describedby="csv-tip error">name,organization,role
+Jordan Lee,Harbor Tech Forum,Speaker
+Morgan Rivera,Northstar Labs,Attendee
+Amira Patel,Civic Data Collective,Volunteer
+Kai Bennett,Open Systems Guild,Staff</textarea></label>
+        <p class="hint" id="csv-tip">Quoted commas and UTF-8 names are supported. Export as “CSV UTF-8” from Excel. Check the preview before printing.</p>
+        <label class="field">Paper<select id="paper"><option value="a4">A4 portrait</option><option value="letter">US Letter portrait</option></select></label>
+        <div class="actions"><button class="button primary" id="build" type="button">Build badges</button><button class="button secondary" id="print" type="button" disabled>Print / save PDF ↗</button></div>
+        <p id="error" class="notice error" role="alert" aria-live="assertive" hidden></p>
+        <p id="status" class="notice success" role="status" aria-live="polite" hidden></p>
+      </div>
+      <div class="panel preview-panel"><div class="section-head"><div><p class="eyebrow">02 / REVIEW</p><h2>All sheet previews</h2></div><span id="count" class="count">0 badges</span></div>
+        <p class="help">Scroll to check every sheet. At 100% scale, every badge prints at 3 × 4 inches.</p>
+        <div id="print-pages" aria-label="Printable badge sheets"></div>
+        <p class="hint preview-note" id="page-count">Build badges to see the page count.</p>
+      </div>
+    </section>
+    <section class="wrap instructions" aria-labelledby="print-title">
+      <p class="eyebrow">PRINT CHECKLIST</p><h2 id="print-title">Check one sheet before the full run.</h2>
+      <ol><li>Choose the same paper size in this tool and in your printer dialog.</li><li>Use <strong>portrait</strong> and <strong>100% scale</strong>. Choose no margins when available, and turn browser headers and footers off.</li><li>Print one sheet on plain paper. Measure a badge: it should be <strong>3 × 4 inches (76.2 × 101.6 mm)</strong>. Cut along the dotted borders and check your holder before printing all sheets.</li></ol>
+      <p>These are cut-out inserts on plain paper, not a preset for perforated label stock. Badge holder sizes vary. Role text is for display only, not access control.</p>
+    </section>
+    <section class="wrap related" aria-label="Other conference print tools"><div><p class="eyebrow">MAKE THE WHOLE EVENT CLEARER</p><h2>Need room signs or pocket schedules?</h2><p>Use the free <a href="./">room sign maker</a>, or get the offline tools that turn your schedule exports into print-ready materials.</p></div><div class="related-links"><a href="https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs?utm_source=github_pages&amp;utm_medium=badge_tool&amp;utm_campaign=related_tools">Schedule Press · $4.90 ↗</a><a href="https://5611130604166.gumroad.com/l/pocket-agenda-studio?utm_source=github_pages&amp;utm_medium=badge_tool&amp;utm_campaign=related_tools">Pocket Agenda Studio · $4.90 ↗</a></div></section>
+  </main>
+  <footer class="wrap footer"><p>Made for small events. Fictional names in the example. <a href="https://github.com/hyunwooju00/room-sign-maker">Source on GitHub</a>.</p></footer>
+  <style id="page-rule"></style>
+</body>
+</html>
