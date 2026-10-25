@@ -2,6 +2,8 @@
 
 A one-page, one-room manual sign maker from Schedule Press. Enter the event, room, date, and up to six sessions; inspect the page; then use the browser's print dialog to print or save a PDF. Entries are processed in the tab and are not uploaded or saved.
 
+**[Open the free room sign maker](https://hyunwooju00.github.io/room-sign-maker/)** · [Make name badges](https://hyunwooju00.github.io/room-sign-maker/badge-maker.html) · [Make workshop certificates](https://hyunwooju00.github.io/room-sign-maker/workshop-certificate-maker.html)
+
 The full [Schedule Press](https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs) kit makes room-by-room, day-by-day print packs from organizer-created Sessionize Schedule Grid JSON. This free maker uses manual entry and does not accept a public Sessionize timetable page.
 
 [Pocket Agenda Studio](https://5611130604166.gumroad.com/l/pocket-agenda-studio) is a separate $4.90 offline CSV-to-foldable-agenda kit for attendees. The site links to both products from the relevant print workflow. The [free pocket agenda guide](printable-pocket-conference-agenda.html) includes a fictional CSV example, a real one-page PDF sample, and a fold-and-print checklist.
