@@ -6,7 +6,7 @@ A one-page, one-room manual sign maker from Schedule Press. Enter the event, roo
 
 The full [Schedule Press](https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs) kit makes room-by-room, day-by-day print packs from organizer-created Sessionize Schedule Grid JSON. This free maker uses manual entry and does not accept a public Sessionize timetable page.
 
-[Pocket Agenda Studio](https://5611130604166.gumroad.com/l/pocket-agenda-studio) is a separate $4.90 offline CSV-to-foldable-agenda kit for attendees. The site links to both products from the relevant print workflow. The [free pocket agenda guide](printable-pocket-conference-agenda.html) includes a fictional CSV example, a real one-page PDF sample, and a fold-and-print checklist.
+[Pocket Agenda Studio](https://5611130604166.gumroad.com/l/pocket-agenda-studio) is a separate $2.90 offline CSV-to-foldable-agenda kit for attendees. The site links to both products from the relevant print workflow. The [free pocket agenda guide](printable-pocket-conference-agenda.html) includes a fictional CSV example, a real one-page PDF sample, and a fold-and-print checklist.
 
 The site also includes a [Sessionize room-door sign workflow](sessionize-room-signs.html): endpoint setup, data checks, proofing and a printer checklist. It cites Sessionize's official API guidance and links back to the free maker. Product links from the free site use Gumroad UTM parameters so future clicks and purchases can be attributed to this site; no site analytics script is installed.
 
