@@ -10,3 +10,6 @@
 .print-warning{display:none}
 input[aria-invalid="true"]{border-color:#b74631!important;box-shadow:0 0 0 2px #b7463126}
 @media(max-width:420px){.session-fields{grid-template-columns:1fr}.session-fields .span2{grid-column:auto}}
+
+.related{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:35px;padding-bottom:35px;border-bottom:1px solid var(--line)}.related h2{font-size:clamp(24px,2.8vw,34px);letter-spacing:-.045em;margin:0 0 10px}.related p:not(.eyebrow){font-size:14px;line-height:1.6;color:#53645a;max-width:680px;margin:0}.related .button{flex:none}
+@media(max-width:1050px){.related{align-items:flex-start;flex-direction:column}}@media(max-width:650px){.related .button{flex:auto;max-width:100%}}
