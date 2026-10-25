@@ -4,6 +4,8 @@ A one-page, one-room manual sign maker from Schedule Press. Enter the event, roo
 
 The full [Schedule Press](https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs) kit makes room-by-room, day-by-day print packs from organizer-created Sessionize Schedule Grid JSON. This free maker uses manual entry and does not accept a public Sessionize timetable page.
 
+The site also includes a [Sessionize room-door sign workflow](sessionize-room-signs.html): endpoint setup, data checks, proofing and a printer checklist. It cites Sessionize's official API guidance and links back to the free maker. Product links from the free site use Gumroad UTM parameters so future clicks and purchases can be attributed to this site; no site analytics script is installed.
+
 ## Use
 
 Open `index.html` in a current desktop Chromium browser or visit the GitHub Pages site. Choose **Try sample** to inspect an example. Fill in your own event data, review the print preview, then select **Print or save PDF**. Match A4 or US Letter paper, use 100% scale and no margins, disable browser headers and footers, and inspect the final print preview. This is an independent tool and is not affiliated with Sessionize.
