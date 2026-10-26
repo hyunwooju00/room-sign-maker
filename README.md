@@ -4,11 +4,11 @@ A one-page, one-room manual sign maker from Schedule Press. Enter the event, roo
 
 **[Open the free room sign maker](https://hyunwooju00.github.io/room-sign-maker/)** · [Make name badges](https://hyunwooju00.github.io/room-sign-maker/badge-maker.html) · [Make workshop certificates](https://hyunwooju00.github.io/room-sign-maker/workshop-certificate-maker.html)
 
-The full [Schedule Press](https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs) kit makes room-by-room, day-by-day print packs from organizer-created Sessionize Schedule Grid JSON. This free maker uses manual entry and does not accept a public Sessionize timetable page.
+The full Schedule Press kit is available on [Etsy](https://www.etsy.com/listing/4603384149/sessionize-json-room-sign-generator) and [Gumroad](https://5611130604166.gumroad.com/l/schedule-press-sessionize-room-signs). It makes room-by-room, day-by-day print packs from organizer-created Sessionize Schedule Grid JSON. This free maker uses manual entry and does not accept a public Sessionize timetable page.
 
 [Pocket Agenda Studio](https://5611130604166.gumroad.com/l/pocket-agenda-studio) is a separate $2.90 offline CSV-to-foldable-agenda kit for attendees. The site links to both products from the relevant print workflow. The [free pocket agenda guide](printable-pocket-conference-agenda.html) includes a fictional CSV example, a real one-page PDF sample, and a fold-and-print checklist.
 
-The site also includes a [Sessionize room-door sign workflow](sessionize-room-signs.html): endpoint setup, data checks, proofing and a printer checklist. It cites Sessionize's official API guidance and links back to the free maker. Product links from the free site use Gumroad UTM parameters so future clicks and purchases can be attributed to this site; no site analytics script is installed.
+The site also includes a [Sessionize room-door sign workflow](sessionize-room-signs.html): endpoint setup, data checks, proofing and a printer checklist. It cites Sessionize's official API guidance and links back to the free maker. The guide links to both Etsy and Gumroad. Gumroad links include UTM parameters; no site analytics script is installed.
 
 The [free CSV name badge maker](badge-maker.html) imports up to 250 people and makes four 3 × 4 inch cut-out inserts per A4 or US Letter sheet. It accepts `name` or separate first/last name columns, with optional organization and role. It handles UTF-8 comma, semicolon, or tab-delimited files in the browser. `badge-example.csv` and the browser-generated `badge-sample-A4.pdf` use fictional attendees. The badges are plain-paper inserts, not calibrated for perforated label stock. The [PDF sample](badge-sample-A4.pdf) is one A4 page with four badges.
 
